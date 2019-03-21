@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<h3>Create Course</h3>
+<body>
+<p id="demo"></p>
+<script >
+var txt="";
+var x;
+function createCourse(courseTitle, courseDuration, courseStudents)
+{ 
+      this.courseTitle=courseTitle;
+      this.courseDuration=courseDuration;
+      this.courseStudents=courseStudents; 
+}
+var obj= new createCourse('Bloc Front-End Engineering' , '4 weeks' , ['Joe', 'Tim', 'Rob']);
+for(x in obj)
+{
+ txt+=obj[x];
+}
+document.getElementById("demo").innerHTML = txt;
+</script>
+</body>
+</html>
